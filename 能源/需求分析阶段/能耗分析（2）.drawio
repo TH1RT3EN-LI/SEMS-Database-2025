@@ -1,0 +1,222 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="第 1 页" id="I7QiD7EG_FtsETH_Rcat">
+    <mxGraphModel dx="2696" dy="1840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-1" value="&lt;font&gt;能耗监测数据表&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;treeFolding=0;treeMoving=0;glass=0;arcSize=30;fontFamily=Helvetica;fontStyle=1;fontSize=13;strokeColor=default;align=center;verticalAlign=middle;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-2" value="&lt;font&gt;大屏展示系统&lt;/font&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-3" value="能耗数据采集与接入" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="570" y="110" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-6" value="数据波动性校验与标记" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="570" y="410" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-7" value="峰谷分时统计与成本计算" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1220" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-9" value="日能耗报表生成与高耗能区域识别" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1220" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-10" value="异常能耗识别与推送" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="990" y="410" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-11" value="能耗监测数据入库（含厂区信息补全 &amp;amp; 全量入库）" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="570" y="740" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-12" value="智能计量设备" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="120" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-13" value="&lt;font&gt;告警运维系统&lt;/font&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-14" value="能源管理员" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="810" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-26" value="&lt;font&gt;异常能耗记录表&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;treeFolding=0;treeMoving=0;glass=0;arcSize=30;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-28" value="&lt;font&gt;峰谷能耗数据表&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;treeFolding=0;treeMoving=0;glass=0;arcSize=30;fontFamily=Helvetica;fontStyle=1;fontSize=13;strokeColor=default;align=center;verticalAlign=middle;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-29" value="&lt;font&gt;计量设备信息表&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;treeFolding=0;treeMoving=0;glass=0;arcSize=30;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-66" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-12" target="EyCY7Q1bgPOu7v1lXzHd-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="590" as="sourcePoint" />
+            <mxPoint x="860" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-67" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;原始能耗数据&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-66">
+          <mxGeometry x="-0.1804" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-69" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-3" target="EyCY7Q1bgPOu7v1lXzHd-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="580" as="sourcePoint" />
+            <mxPoint x="800" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-71" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;设备基础信息（厂区编号、能源类型）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-69">
+          <mxGeometry x="-0.0752" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-70" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-11" target="EyCY7Q1bgPOu7v1lXzHd-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="740" as="sourcePoint" />
+            <mxPoint x="770" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-72" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;厂区编号/能源类型关联信息&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-70">
+          <mxGeometry x="0.072" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-73" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-3" target="EyCY7Q1bgPOu7v1lXzHd-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="730" as="sourcePoint" />
+            <mxPoint x="770" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-75" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;待校验能耗数据&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-73">
+          <mxGeometry x="-0.0315" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-74" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-6" target="EyCY7Q1bgPOu7v1lXzHd-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="730" as="sourcePoint" />
+            <mxPoint x="770" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-76" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;能耗监测数据（含质量标记）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-74">
+          <mxGeometry x="-0.0341" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-77" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-11" target="EyCY7Q1bgPOu7v1lXzHd-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-79" value="&lt;br style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;写入完整监测数据记录（优/良/中/差）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-77">
+          <mxGeometry x="-0.0498" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-78" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-1" target="EyCY7Q1bgPOu7v1lXzHd-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-80" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;日能耗监测数据集（含设备/厂区/能源类型）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-78">
+          <mxGeometry x="-0.1194" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-81" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-7" target="EyCY7Q1bgPOu7v1lXzHd-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-82" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-81">
+          <mxGeometry x="0.1136" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-100" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;写入峰谷能耗结果&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-81">
+          <mxGeometry x="-0.0049" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-83" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-7" target="EyCY7Q1bgPOu7v1lXzHd-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-84" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;日峰谷能耗与成本明细&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-83">
+          <mxGeometry x="-0.0034" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-86" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-9" target="EyCY7Q1bgPOu7v1lXzHd-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="1440" as="sourcePoint" />
+            <mxPoint x="770" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-87" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;能耗汇总数据（厂区/能源/峰谷占比）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-86">
+          <mxGeometry x="-0.0361" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-88" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-9" target="EyCY7Q1bgPOu7v1lXzHd-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="1440" as="sourcePoint" />
+            <mxPoint x="770" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-89" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;能耗报表 / 高耗能区域&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-88">
+          <mxGeometry x="0.0205" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-90" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-10" target="EyCY7Q1bgPOu7v1lXzHd-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-91" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;异常数据清单&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-90">
+          <mxGeometry x="-0.0044" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-92" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-10" target="EyCY7Q1bgPOu7v1lXzHd-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-93" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;重大能耗异常事件&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-92">
+          <mxGeometry x="-0.0381" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-94" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-6" target="EyCY7Q1bgPOu7v1lXzHd-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-95" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;异常能耗数据（质量中/差）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-94">
+          <mxGeometry x="-0.085" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-96" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EyCY7Q1bgPOu7v1lXzHd-10" target="EyCY7Q1bgPOu7v1lXzHd-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="870" as="sourcePoint" />
+            <mxPoint x="770" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EyCY7Q1bgPOu7v1lXzHd-97" value="&lt;span style=&quot;font-size: 11px; font-weight: 400;&quot;&gt;写入异常能耗记录（质量中/差或波动异常）&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;glass=0;strokeColor=default;arcSize=30;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="EyCY7Q1bgPOu7v1lXzHd-96">
+          <mxGeometry x="-0.0095" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

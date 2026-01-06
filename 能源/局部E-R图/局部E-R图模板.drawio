@@ -1,0 +1,221 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.6">
+  <diagram name="第 1 页" id="fSTCbA05a9k6hK2_HhC7">
+    <mxGraphModel dx="2063" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-5" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="275" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-25" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="583.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-31" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;textShadow=1;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="这个是实体应该够长了吧吧" vertex="1">
+          <mxGeometry height="90" width="170" x="300" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-4" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;联系最多这么多字够吧&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="300" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-30" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="769" />
+              <mxPoint x="385" y="769" />
+            </Array>
+            <mxPoint x="385" y="583.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="184.25" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="这个是实体应该够长了吧吧" vertex="1">
+          <mxGeometry height="90" width="170" x="300" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="320.25" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-29" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="656" y="769" />
+              <mxPoint x="385" y="769" />
+            </Array>
+            <mxPoint x="385" y="583.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="591.25" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-28" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="769" />
+              <mxPoint x="385" y="769" />
+            </Array>
+            <mxPoint x="385" y="583.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="455.25" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="-149" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-32" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="449" />
+              <mxPoint x="40" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="-149" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-37" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="359" />
+              <mxPoint x="40" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="-149" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-26" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="114" y="769" />
+              <mxPoint x="385" y="769" />
+            </Array>
+            <mxPoint x="385" y="583.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="48.75" y="806" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-36" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="709" />
+              <mxPoint x="40" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="-149" y="674" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-34" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="619" />
+              <mxPoint x="40" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="-149" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-38" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524" y="1120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-39" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524" y="1428.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="这个是实体应该够长了吧吧" vertex="1">
+          <mxGeometry height="90" width="170" x="1439" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-42" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="3rNL4W7ZAKDivC_kIBCv-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;联系最多这么多字够吧&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="1439" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-44" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1388" y="1614" />
+              <mxPoint x="1524" y="1614" />
+            </Array>
+            <mxPoint x="1524" y="1428.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="1323.25" y="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="这个是实体应该够长了吧吧" vertex="1">
+          <mxGeometry height="90" width="170" x="1439" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="1459.25" y="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-48" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1795" y="1614" />
+              <mxPoint x="1524" y="1614" />
+            </Array>
+            <mxPoint x="1524" y="1428.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-49" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="1730.25" y="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-50" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1659" y="1614" />
+              <mxPoint x="1524" y="1614" />
+            </Array>
+            <mxPoint x="1524" y="1428.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="1594.25" y="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-52" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="990" y="1349" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-54" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="990" y="1259" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="990" y="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-57" edge="1" parent="1" source="3rNL4W7ZAKDivC_kIBCv-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1253" y="1614" />
+              <mxPoint x="1524" y="1614" />
+            </Array>
+            <mxPoint x="1524" y="1428.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="1187.75" y="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-60" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="990" y="1519" as="geometry" />
+        </mxCell>
+        <mxCell id="3rNL4W7ZAKDivC_kIBCv-62" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;textShadow=1;" value="属性大概最多九个字" vertex="1">
+          <mxGeometry height="70" width="130" x="990" y="1429" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

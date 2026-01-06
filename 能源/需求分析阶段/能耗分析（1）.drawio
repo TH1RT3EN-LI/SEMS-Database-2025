@@ -1,0 +1,244 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Energy DFD Level 1" id="Mktsw60cMnjDuHwVdX7I">
+    <mxGraphModel dx="1733" dy="1183" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-29" value="智能计量设备" style="html=1;dashed=0;whiteSpace=wrap;shape=partialRectangle;right=0;left=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="165" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-30" value="能源管理员" style="html=1;dashed=0;whiteSpace=wrap;shape=partialRectangle;right=0;left=0;" parent="1" vertex="1">
+          <mxGeometry x="810" y="160" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-32" value="告警运维系统" style="html=1;dashed=0;whiteSpace=wrap;shape=partialRectangle;right=0;left=0;" parent="1" vertex="1">
+          <mxGeometry x="810" y="610" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-47" value="大屏展示系统" style="html=1;dashed=0;whiteSpace=wrap;shape=partialRectangle;right=0;left=0;" parent="1" vertex="1">
+          <mxGeometry x="810" y="900" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-48" value="能耗数据采集与接入" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="510" y="130" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-49" value="数据波动性校验与标记" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="510" y="320" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-50" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-29" target="m-4Hxphdnsz_17RUPX-X-48" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="390" as="sourcePoint" />
+            <mxPoint x="500" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-52" value="原始能耗数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-50" vertex="1" connectable="0">
+          <mxGeometry x="-0.2083" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iWpMRI8gvmaebn0l8H2U-2" value="" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];strokeColor=default;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="m-4Hxphdnsz_17RUPX-X-50">
+          <mxGeometry x="-0.2327" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-48" target="m-4Hxphdnsz_17RUPX-X-49" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="390" as="sourcePoint" />
+            <mxPoint x="590" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-55" value="待校验能耗数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-54" vertex="1" connectable="0">
+          <mxGeometry x="-0.1259" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iWpMRI8gvmaebn0l8H2U-4" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];strokeColor=default;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="m-4Hxphdnsz_17RUPX-X-54">
+          <mxGeometry x="0.0127" y="7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-56" value=" 能耗监测数据入库（含厂区信息补全 &amp;amp; 全量入库）" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="510" y="510" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-57" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-49" target="m-4Hxphdnsz_17RUPX-X-56" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="390" as="sourcePoint" />
+            <mxPoint x="590" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-58" value="能耗监测数据（含质量标记）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-57" vertex="1" connectable="0">
+          <mxGeometry x="-0.037" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iWpMRI8gvmaebn0l8H2U-5" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];strokeColor=default;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="m-4Hxphdnsz_17RUPX-X-57">
+          <mxGeometry x="-0.019" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-59" value=" 异常能耗识别与推送" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="810" y="320" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-60" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-49" target="m-4Hxphdnsz_17RUPX-X-59" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="390" as="sourcePoint" />
+            <mxPoint x="590" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-61" value="异常能耗数据（质量中/差）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-60" vertex="1" connectable="0">
+          <mxGeometry x="-0.1487" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-62" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-59" target="m-4Hxphdnsz_17RUPX-X-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="390" as="sourcePoint" />
+            <mxPoint x="590" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-63" value="异常数据清单" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-62" vertex="1" connectable="0">
+          <mxGeometry x="-0.159" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-64" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-59" target="m-4Hxphdnsz_17RUPX-X-32" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="390" as="sourcePoint" />
+            <mxPoint x="590" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-65" value="重大能耗异常事件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-64" vertex="1" connectable="0">
+          <mxGeometry x="0.0246" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-71" value=" 峰谷分时统计与成本计算" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="510" y="697" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-72" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-81" target="m-4Hxphdnsz_17RUPX-X-71" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="440" as="sourcePoint" />
+            <mxPoint x="590" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-73" value="日能耗监测数据集（含设备/厂区/能源类型）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-72" vertex="1" connectable="0">
+          <mxGeometry x="0.1724" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-74" value=" 日能耗报表生成与高耗能区域识别" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="810" y="697" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-75" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.02;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.02;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-71" target="m-4Hxphdnsz_17RUPX-X-74" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="660" as="sourcePoint" />
+            <mxPoint x="740" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-76" value="日峰谷能耗与成本明细" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-75" vertex="1" connectable="0">
+          <mxGeometry x="-0.0857" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-77" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.573;entryY=1.089;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-74" target="m-4Hxphdnsz_17RUPX-X-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="560" as="sourcePoint" />
+            <mxPoint x="740" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-78" value="能耗报表 / 高耗能区域" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-77" vertex="1" connectable="0">
+          <mxGeometry x="-0.0805" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-79" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-74" target="m-4Hxphdnsz_17RUPX-X-47" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="560" as="sourcePoint" />
+            <mxPoint x="750" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-80" value="能耗汇总数据（厂区/能源/峰谷占比）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-79" vertex="1" connectable="0">
+          <mxGeometry x="0.0874" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-81" value="能耗监测数据表" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-82" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="m-4Hxphdnsz_17RUPX-X-81" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="560" as="sourcePoint" />
+            <mxPoint x="560" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-85" value="&#xa;写入完整监测数据记录（优/良/中/差）&#xa;&#xa;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-82" vertex="1" connectable="0">
+          <mxGeometry x="0.0476" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-86" value="异常能耗记录表" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-87" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-59" target="m-4Hxphdnsz_17RUPX-X-86" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="990" y="560" as="sourcePoint" />
+            <mxPoint x="1070" y="370" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-100" value="写入异常能耗记录（质量中/差或波动异常）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-87" vertex="1" connectable="0">
+          <mxGeometry x="0.0173" y="4" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-89" value="峰谷能耗数据表" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="717" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-90" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-71" target="m-4Hxphdnsz_17RUPX-X-89" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="760" as="sourcePoint" />
+            <mxPoint x="680" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-92" value="写入峰谷能耗结果" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-90" vertex="1" connectable="0">
+          <mxGeometry x="-0.1378" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iWpMRI8gvmaebn0l8H2U-6" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];strokeColor=default;fontFamily=Helvetica;fontSize=13;fontColor=default;fontStyle=1;fillColor=default;" vertex="1" connectable="0" parent="m-4Hxphdnsz_17RUPX-X-90">
+          <mxGeometry x="-0.0197" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-93" value="计量设备信息表" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-94" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-48" target="m-4Hxphdnsz_17RUPX-X-93" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="360" as="sourcePoint" />
+            <mxPoint x="530" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-95" value="设备基础信息（厂区编号、能源类型）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-94" vertex="1" connectable="0">
+          <mxGeometry x="0.0714" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-96" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.02;exitY=0.44;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="m-4Hxphdnsz_17RUPX-X-56" target="m-4Hxphdnsz_17RUPX-X-93" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="360" as="sourcePoint" />
+            <mxPoint x="530" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-4Hxphdnsz_17RUPX-X-97" value="厂区编号/能源类型关联信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="m-4Hxphdnsz_17RUPX-X-96" vertex="1" connectable="0">
+          <mxGeometry x="0.0895" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iWpMRI8gvmaebn0l8H2U-1" value="正圆形模板" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="630" y="10" width="140" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

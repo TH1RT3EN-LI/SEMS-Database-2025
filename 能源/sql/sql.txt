@@ -1,0 +1,251 @@
+USE EnergyDB;
+GO
+
+/* ============================================================
+   R1 厂区基础信息表 plant_area
+   - plant_area_id: 格式 XY（字母数字结合），示例 A3、B2、C2
+   ============================================================ */
+CREATE TABLE plant_area (
+    plant_area_id   NVARCHAR(20) NOT NULL,
+    plant_area_name NVARCHAR(50) NOT NULL,
+
+    CONSTRAINT PK_plant_area PRIMARY KEY (plant_area_id),
+
+    -- 取值约束：字母数字结合；并尽量贴近示例（至少2位，且只含字母数字）
+    CONSTRAINT CK_plant_area_id_format
+        CHECK (
+            LEN(plant_area_id) BETWEEN 2 AND 20
+            AND PATINDEX('%[^0-9A-Za-z]%', plant_area_id) = 0
+        )
+);
+GO
+
+
+/* ============================================================
+   R5 能源分类表 energy_category
+   - energy_type: 枚举 水/蒸汽/天然气/电
+   - unit: 枚举 m³ / t / kWh
+   ============================================================ */
+CREATE TABLE energy_category (
+    energy_type NVARCHAR(20) NOT NULL,
+    unit        NVARCHAR(10) NOT NULL,
+
+    CONSTRAINT PK_energy_category PRIMARY KEY (energy_type),
+
+    CONSTRAINT CK_energy_type_enum
+        CHECK (energy_type IN (N'水', N'蒸汽', N'天然气', N'电')),
+
+    CONSTRAINT CK_unit_enum
+        CHECK (unit IN (N'm³', N't', N'kWh'))
+);
+GO
+
+
+/* ============================================================
+   R6 能源计价策略表 pricing_strategy
+   - strategy_id: VARCHAR(20)（唯一编码）
+   - peak/high/flat/valley_price: 0.00–10.00
+   ============================================================ */
+CREATE TABLE pricing_strategy (
+    strategy_id  VARCHAR(20)  NOT NULL,     -- 例：ST_ELEC_2025 / ST_WATER_2025 / ST_STEAM_2025 / ST_GAS_2025
+    energy_type  NVARCHAR(20) NOT NULL,     -- 电/水/蒸汽/天然气
+
+    peak_price   DECIMAL(4,2) NOT NULL,     -- 0.00–10.00
+    high_price   DECIMAL(4,2) NOT NULL,     -- 0.00–10.00
+    flat_price   DECIMAL(4,2) NOT NULL,     -- 0.00–10.00
+    valley_price DECIMAL(4,2) NOT NULL,     -- 0.00–10.00
+
+    CONSTRAINT PK_pricing_strategy
+        PRIMARY KEY (strategy_id),
+
+    CONSTRAINT FK_pricing_strategy_energy
+        FOREIGN KEY (energy_type)
+        REFERENCES energy_category (energy_type),
+
+    -- strategy_id：必须以 ST_ 开头；后面允许字母数字下划线
+    CONSTRAINT CK_strategy_id_format
+        CHECK (
+            strategy_id LIKE 'ST\_%' ESCAPE '\'
+            AND PATINDEX('%[^0-9A-Za-z_]%', strategy_id) = 0
+        ),
+
+    CONSTRAINT CK_price_range_peak   CHECK (peak_price   BETWEEN 0.00 AND 10.00),
+    CONSTRAINT CK_price_range_high   CHECK (high_price   BETWEEN 0.00 AND 10.00),
+    CONSTRAINT CK_price_range_flat   CHECK (flat_price   BETWEEN 0.00 AND 10.00),
+    CONSTRAINT CK_price_range_valley CHECK (valley_price BETWEEN 0.00 AND 10.00)
+);
+
+
+
+/* ============================================================
+   R2 能耗计量设备表 energy_meter
+   - device_id: 格式 TTXXXXX；TT: CS=水 LS=蒸汽 NG=天然气；示例 CS10004
+   - pipe_spec: DN20/DN25/.../DN150
+   - communication_protocol: RS485/LoRa
+   - operation_status: 正常/故障
+   - calibration_cycle_month: 1–24
+   ============================================================ */
+CREATE TABLE energy_meter (
+    device_id               NVARCHAR(20)  NOT NULL,
+    energy_type             NVARCHAR(20)  NOT NULL,
+    install_location        NVARCHAR(100) NOT NULL,
+    pipe_spec               NVARCHAR(10)  NOT NULL,
+    communication_protocol  NVARCHAR(20)  NOT NULL,
+    operation_status        NVARCHAR(5)   NOT NULL,
+    calibration_cycle_month INT           NOT NULL,
+    manufacturer            NVARCHAR(50)  NULL,
+    plant_area_id           NVARCHAR(20)  NOT NULL,
+
+    CONSTRAINT PK_energy_meter PRIMARY KEY (device_id),
+
+    CONSTRAINT FK_energy_meter_area
+        FOREIGN KEY (plant_area_id) REFERENCES plant_area(plant_area_id),
+
+    CONSTRAINT FK_energy_meter_energy
+        FOREIGN KEY (energy_type) REFERENCES energy_category(energy_type),
+
+    -- device_id 格式：CS/LS/NG + 5位数字
+    CONSTRAINT CK_device_id_format
+        CHECK (
+            LEN(device_id) = 7
+            AND LEFT(device_id, 2) IN (N'CS', N'LS', N'NG')
+            AND SUBSTRING(device_id, 3, 5) LIKE '[0-9][0-9][0-9][0-9][0-9]'
+        ),
+
+    CONSTRAINT CK_pipe_spec_enum
+        CHECK (pipe_spec IN (
+            N'DN20', N'DN25', N'DN32', N'DN40', N'DN50', N'DN65',
+            N'DN80', N'DN100', N'DN125', N'DN150'
+        )),
+
+    CONSTRAINT CK_comm_protocol_enum
+        CHECK (communication_protocol IN (N'RS485', N'LoRa')),
+
+    CONSTRAINT CK_operation_status_enum
+        CHECK (operation_status IN (N'正常', N'故障')),
+
+    CONSTRAINT CK_calibration_cycle_range
+        CHECK (calibration_cycle_month BETWEEN 1 AND 24)
+);
+GO
+
+
+/* ============================================================
+   R3 能耗监测数据表 energy_monitoring
+   - 主键改名：monitoring_id（避免与R4重名）
+   - monitoring_id 格式：EMXXXXX
+   - collected_at 格式：DATETIME（类型已保证）
+   - energy_value 范围：-999999.99–999999.99（负值视为异常，但字典允许入库）
+   - unit 枚举：m³ / t / kWh
+   - data_quality 枚举：优/良/中/差
+   - data_integrity：完整/不完整
+   ============================================================ */
+CREATE TABLE energy_monitoring (
+    monitoring_id  NVARCHAR(30) NOT NULL,  -- 原 record_id (EMXXXXX)
+    device_id      NVARCHAR(20) NOT NULL,
+    collected_at   DATETIME     NOT NULL,
+    energy_value   DECIMAL(8,2) NOT NULL,
+    unit           NVARCHAR(10) NOT NULL,
+    data_quality   NVARCHAR(2)  NOT NULL,
+    plant_area_id  NVARCHAR(20) NOT NULL,
+    data_integrity NVARCHAR(10) NOT NULL,
+
+    CONSTRAINT PK_energy_monitoring PRIMARY KEY (monitoring_id),
+
+    CONSTRAINT FK_energy_monitoring_device
+        FOREIGN KEY (device_id) REFERENCES energy_meter(device_id),
+
+    CONSTRAINT FK_energy_monitoring_area
+        FOREIGN KEY (plant_area_id) REFERENCES plant_area(plant_area_id),
+
+    -- EM + 5位数字（字典：EM00001–EM99999）
+    CONSTRAINT CK_monitoring_id_format
+        CHECK (
+            LEN(monitoring_id) >= 7
+            AND LEFT(monitoring_id, 2) = N'EM'
+            AND SUBSTRING(monitoring_id, 3, 5) LIKE '[0-9][0-9][0-9][0-9][0-9]'
+        ),
+
+    CONSTRAINT CK_energy_value_range
+        CHECK (energy_value BETWEEN -999999.99 AND 999999.99),
+
+    CONSTRAINT CK_monitor_unit_enum
+        CHECK (unit IN (N'm³', N't', N'kWh')),
+
+    CONSTRAINT CK_data_quality_enum
+        CHECK (data_quality IN (N'优', N'良', N'中', N'差')),
+
+    CONSTRAINT CK_data_integrity_enum
+        CHECK (data_integrity IN (N'完整', N'不完整'))
+);
+GO
+
+
+/* ============================================================
+   R4 峰谷能耗数据表 energy_peakvalley
+   - 主键改名：peakvalley_id（避免与R3重名）
+   - peakvalley_id 格式：PVXXXXX
+   - energy_type 枚举：水/蒸汽/天然气/电（且FK到energy_category）
+   - 能耗值范围：-999999.99–999999.99（负值视为异常，但字典允许范围）
+   - peakvalley_price：0–10.00（元/kWh）
+   - energy_cost 范围：-999999.99–999999.99（字典给了范围；一般不为负但不强行禁止）
+   - data_integrity：完整/不完整
+   - 外键：plant_area_id -> R1；energy_type -> R5；strategy_id -> R6
+   ============================================================ */
+CREATE TABLE energy_peakvalley (
+    peakvalley_id    NVARCHAR(30) NOT NULL,  -- 原 record_id (PVXXXXX)
+
+    energy_type       NVARCHAR(20) NOT NULL,
+    plant_area_id     NVARCHAR(20) NOT NULL,
+    statistic_date    DATE         NOT NULL,
+
+    peak_energy       DECIMAL(8,2) NOT NULL,
+    high_energy       DECIMAL(8,2) NOT NULL,
+    flat_energy       DECIMAL(8,2) NOT NULL,
+    valley_energy     DECIMAL(8,2) NOT NULL,
+    total_energy      DECIMAL(8,2) NOT NULL,
+
+    peakvalley_price  DECIMAL(5,2) NOT NULL,
+    energy_cost       DECIMAL(8,2) NOT NULL,
+
+    strategy_id       VARCHAR(20)  NOT NULL,
+    data_integrity    NVARCHAR(10) NOT NULL,
+
+    CONSTRAINT PK_energy_peakvalley PRIMARY KEY (peakvalley_id),
+
+    CONSTRAINT FK_peakvalley_energy
+        FOREIGN KEY (energy_type) REFERENCES energy_category(energy_type),
+
+    CONSTRAINT FK_peakvalley_area
+        FOREIGN KEY (plant_area_id) REFERENCES plant_area(plant_area_id),
+
+    CONSTRAINT FK_peakvalley_strategy
+        FOREIGN KEY (strategy_id) REFERENCES pricing_strategy(strategy_id),
+
+    -- PV + 5位数字
+    CONSTRAINT CK_peakvalley_id_format
+        CHECK (
+            LEN(peakvalley_id) >= 7
+            AND LEFT(peakvalley_id, 2) = N'PV'
+            AND SUBSTRING(peakvalley_id, 3, 5) LIKE '[0-9][0-9][0-9][0-9][0-9]'
+        ),
+
+    CONSTRAINT CK_energy_type_enum_peakvalley
+        CHECK (energy_type IN (N'水', N'蒸汽', N'天然气', N'电')),
+
+    CONSTRAINT CK_peak_energy_range    CHECK (peak_energy   BETWEEN -999999.99 AND 999999.99),
+    CONSTRAINT CK_high_energy_range    CHECK (high_energy   BETWEEN -999999.99 AND 999999.99),
+    CONSTRAINT CK_flat_energy_range    CHECK (flat_energy   BETWEEN -999999.99 AND 999999.99),
+    CONSTRAINT CK_valley_energy_range  CHECK (valley_energy BETWEEN -999999.99 AND 999999.99),
+    CONSTRAINT CK_total_energy_range   CHECK (total_energy  BETWEEN -999999.99 AND 999999.99),
+
+    CONSTRAINT CK_peakvalley_price_range
+        CHECK (peakvalley_price BETWEEN 0.00 AND 10.00),
+
+    CONSTRAINT CK_energy_cost_range
+        CHECK (energy_cost BETWEEN -999999.99 AND 999999.99),
+
+    CONSTRAINT CK_data_integrity_enum_pv
+        CHECK (data_integrity IN (N'完整', N'不完整'))
+);
+GO

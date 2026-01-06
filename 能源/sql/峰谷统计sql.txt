@@ -1,0 +1,105 @@
+/* ============================================================
+   峰谷能耗统计示例 SQL（非 DDL）
+   说明：按监测数据采集时间进行时段划分并汇总，输出峰谷统计结果（不落表）
+   ============================================================ */
+
+DECLARE @statistic_date date = '2025-12-27';
+DECLARE @strategy_id    varchar(20) = 'ST_ELEC_2025';
+
+;WITH src AS (
+    SELECT
+        m.plant_area_id,
+        d.energy_type,
+        CAST(m.collected_at AS date) AS statistic_date,
+        CONVERT(time, m.collected_at) AS t,
+        m.energy_value
+    FROM dbo.energy_monitoring m
+    JOIN dbo.energy_meter d
+      ON d.device_id = m.device_id
+    WHERE m.collected_at >= DATEFROMPARTS(
+                                YEAR(@statistic_date),
+                                MONTH(@statistic_date),
+                                DAY(@statistic_date)
+                            )
+      AND m.collected_at <  DATEADD(
+                                day, 1,
+                                DATEFROMPARTS(
+                                    YEAR(@statistic_date),
+                                    MONTH(@statistic_date),
+                                    DAY(@statistic_date)
+                                )
+                            )
+),
+agg AS (
+    SELECT
+        plant_area_id,
+        energy_type,
+        statistic_date,
+
+        -- 尖峰：10:00-12:00 / 16:00-18:00
+        SUM(CASE
+            WHEN (t >= '10:00' AND t < '12:00')
+              OR (t >= '16:00' AND t < '18:00')
+            THEN energy_value ELSE 0 END) AS peak_energy,
+
+        -- 高峰：08:00-10:00 / 12:00-16:00 / 18:00-22:00
+        SUM(CASE
+            WHEN (t >= '08:00' AND t < '10:00')
+              OR (t >= '12:00' AND t < '16:00')
+              OR (t >= '18:00' AND t < '22:00')
+            THEN energy_value ELSE 0 END) AS high_energy,
+
+        -- 平段：06:00-08:00 / 22:00-24:00
+        SUM(CASE
+            WHEN (t >= '06:00' AND t < '08:00')
+              OR (t >= '22:00')
+            THEN energy_value ELSE 0 END) AS flat_energy,
+
+        -- 低谷：00:00-06:00
+        SUM(CASE
+            WHEN (t >= '00:00' AND t < '06:00')
+            THEN energy_value ELSE 0 END) AS valley_energy,
+
+        -- 总能耗
+        SUM(energy_value) AS total_energy
+    FROM src
+    GROUP BY plant_area_id, energy_type, statistic_date
+)
+SELECT
+    a.energy_type,
+    a.plant_area_id,
+    a.statistic_date,
+
+    CAST(a.peak_energy   AS decimal(8,2)) AS peak_energy,
+    CAST(a.high_energy   AS decimal(8,2)) AS high_energy,
+    CAST(a.flat_energy   AS decimal(8,2)) AS flat_energy,
+    CAST(a.valley_energy AS decimal(8,2)) AS valley_energy,
+    CAST(a.total_energy  AS decimal(8,2)) AS total_energy,
+
+    -- 分时计价成本
+    CAST(
+        a.peak_energy   * s.peak_price +
+        a.high_energy   * s.high_price +
+        a.flat_energy   * s.flat_price +
+        a.valley_energy * s.valley_price
+    AS decimal(8,2)) AS energy_cost,
+
+    -- 加权平均电价
+    CAST(
+        CASE 
+            WHEN a.total_energy = 0 THEN 0
+            ELSE (
+                a.peak_energy   * s.peak_price +
+                a.high_energy   * s.high_price +
+                a.flat_energy   * s.flat_price +
+                a.valley_energy * s.valley_price
+            ) / NULLIF(a.total_energy, 0)
+        END
+    AS decimal(5,2)) AS peakvalley_price,
+
+    @strategy_id AS strategy_id
+FROM agg a
+JOIN dbo.pricing_strategy s
+  ON s.strategy_id = @strategy_id
+ AND s.energy_type = a.energy_type
+ORDER BY a.plant_area_id, a.energy_type;
