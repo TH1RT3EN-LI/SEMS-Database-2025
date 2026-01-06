@@ -1,0 +1,211 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="第 1 页" id="vfsh-AKhQX0D9MSKJWEx">
+    <mxGraphModel dx="368" dy="521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-36" target="evyRE_f4Q3FfdGGdDpFl-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-51" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;原始监测数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-50" vertex="1" connectable="0">
+          <mxGeometry x="-0.397" relative="1" as="geometry">
+            <mxPoint y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-36" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;接收终端数据&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="660" y="260" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-37" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;校验监测数据&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="660" y="490" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-38" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;存储监测数据&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="290" y="660" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-39" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;推送异常数据&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="660" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-40" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;处理运维更新&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="1264" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-48" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="DDfs0KYy4tekuu0gFRx2-13" target="evyRE_f4Q3FfdGGdDpFl-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="410" as="sourcePoint" />
+            <mxPoint x="500" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-49" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;智能采集原始数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-48" vertex="1" connectable="0">
+          <mxGeometry x="-0.1698" relative="1" as="geometry">
+            <mxPoint x="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DDfs0KYy4tekuu0gFRx2-14" target="evyRE_f4Q3FfdGGdDpFl-37" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="560" as="sourcePoint" />
+            <mxPoint x="580" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-55" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;设备阈值数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-54" vertex="1" connectable="0">
+          <mxGeometry x="-0.1535" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-58" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-37" target="evyRE_f4Q3FfdGGdDpFl-38" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="630" as="sourcePoint" />
+            <mxPoint x="680" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-60" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;正常监测数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-58" vertex="1" connectable="0">
+          <mxGeometry x="-0.3149" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-59" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-37" target="evyRE_f4Q3FfdGGdDpFl-39" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="630" as="sourcePoint" />
+            <mxPoint x="680" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-61" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;异常监测数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-59" vertex="1" connectable="0">
+          <mxGeometry x="-0.3271" y="-1" relative="1" as="geometry">
+            <mxPoint x="28" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-63" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-38" target="2dfDdAQE9lWUawwnOePv-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="800" as="sourcePoint" />
+            <mxPoint x="380" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-64" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;写入回路数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-63" vertex="1" connectable="0">
+          <mxGeometry x="0.3701" y="4" relative="1" as="geometry">
+            <mxPoint x="-22" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-66" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-38" target="2dfDdAQE9lWUawwnOePv-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="810" as="sourcePoint" />
+            <mxPoint x="380" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-67" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;写入变压器数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-66" vertex="1" connectable="0">
+          <mxGeometry x="0.2749" y="2" relative="1" as="geometry">
+            <mxPoint x="-21" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-71" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-40" target="evyRE_f4Q3FfdGGdDpFl-38" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="780" as="sourcePoint" />
+            <mxPoint x="320" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-72" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;运维更新数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-71" vertex="1" connectable="0">
+          <mxGeometry x="0.088" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-73" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="DDfs0KYy4tekuu0gFRx2-11" target="evyRE_f4Q3FfdGGdDpFl-40" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="900" as="sourcePoint" />
+            <mxPoint x="680" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-74" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;运维状态更新指令&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-73" vertex="1" connectable="0">
+          <mxGeometry x="0.2268" relative="1" as="geometry">
+            <mxPoint x="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-75" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-39" target="DDfs0KYy4tekuu0gFRx2-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="900" as="sourcePoint" />
+            <mxPoint x="800" y="884.97" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-76" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;异常数据清单&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-75" vertex="1" connectable="0">
+          <mxGeometry x="-0.3134" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-80" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="evyRE_f4Q3FfdGGdDpFl-39" target="DDfs0KYy4tekuu0gFRx2-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="750" as="sourcePoint" />
+            <mxPoint x="1020" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-81" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;&quot;&gt;异常告警数据&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-80" vertex="1" connectable="0">
+          <mxGeometry x="-0.2555" y="-2" relative="1" as="geometry">
+            <mxPoint x="12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-84" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2dfDdAQE9lWUawwnOePv-1" target="evyRE_f4Q3FfdGGdDpFl-39" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="860" as="sourcePoint" />
+            <mxPoint x="650" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evyRE_f4Q3FfdGGdDpFl-85" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;设备关联信息&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="evyRE_f4Q3FfdGGdDpFl-84" vertex="1" connectable="0">
+          <mxGeometry x="-0.124" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;变压器设备档案维护&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="650" y="930" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="DDfs0KYy4tekuu0gFRx2-4" target="2dfDdAQE9lWUawwnOePv-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1020" as="sourcePoint" />
+            <mxPoint x="720" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;写入数据&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DDfs0KYy4tekuu0gFRx2-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.0412" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="DDfs0KYy4tekuu0gFRx2-15" target="DDfs0KYy4tekuu0gFRx2-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="564" y="1141" as="sourcePoint" />
+            <mxPoint x="740" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-9" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;设备入库/变更信息&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DDfs0KYy4tekuu0gFRx2-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.1745" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-11" value="运维人员" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-12" value="告警运维系统" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-13" value="智能采集终端" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="350" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-14" value="告警规则表" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="380" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DDfs0KYy4tekuu0gFRx2-15" value="设备管理员" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;fontFamily=Helvetica;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="660" y="1160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dfDdAQE9lWUawwnOePv-1" value="回路监测数据表" style="rounded=1;whiteSpace=wrap;html=1;treeFolding=0;treeMoving=0;glass=0;arcSize=30;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="660" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dfDdAQE9lWUawwnOePv-2" value="变压器监测数据表" style="rounded=1;whiteSpace=wrap;html=1;treeFolding=0;treeMoving=0;glass=0;arcSize=30;fontFamily=Helvetica;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="660" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dfDdAQE9lWUawwnOePv-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2dfDdAQE9lWUawwnOePv-2" target="evyRE_f4Q3FfdGGdDpFl-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="870" as="sourcePoint" />
+            <mxPoint x="1010" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2dfDdAQE9lWUawwnOePv-4" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;设备关联信息&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2dfDdAQE9lWUawwnOePv-3">
+          <mxGeometry x="-0.0458" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

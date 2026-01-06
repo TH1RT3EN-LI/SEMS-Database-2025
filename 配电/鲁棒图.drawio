@@ -1,0 +1,94 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="第 1 页" id="jSHbjiEMAeYZ8WJ_3k0z">
+    <mxGraphModel dx="467" dy="487" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-1" value="设备管理员" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="1047.8599999999997" width="57.5" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-2" value="配电管理建档界面" style="shape=umlBoundary;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;flipH=0;" vertex="1" parent="1">
+          <mxGeometry x="441" y="1055.71" width="125" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.495;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-1" target="96A9WtjSYvYVZJKQFNkA-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-8" target="96A9WtjSYvYVZJKQFNkA-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.972;exitY=0.36;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-8" target="96A9WtjSYvYVZJKQFNkA-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.048;exitY=0.619;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-8" target="96A9WtjSYvYVZJKQFNkA-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-8" target="96A9WtjSYvYVZJKQFNkA-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-8" value="配电数据建档服务" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="695.24" y="1041.42" width="100" height="114.29" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.026;entryY=0.563;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-2" target="96A9WtjSYvYVZJKQFNkA-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-10" value="&lt;b&gt;&lt;span&gt;负责人信息&lt;/span&gt;&lt;/b&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="950" y="810" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-11" value="&lt;span&gt;配电房基础信息&lt;/span&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="950" y="947.1400000000003" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-12" value="&lt;b&gt;&lt;span&gt;&lt;font&gt;回路&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span&gt;信息&lt;/span&gt;&lt;/b&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1112.8600000000006" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-13" value="&lt;b&gt;&lt;span&gt;&lt;font&gt;变压器&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;&lt;b&gt;&lt;span&gt;信息&lt;/span&gt;&lt;/b&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1263.2200000000003" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-14" value="&lt;b&gt;&lt;span style=&quot;&quot;&gt;&lt;font&gt;变压器监测数据&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="962" y="310" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-17" target="96A9WtjSYvYVZJKQFNkA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-17" target="96A9WtjSYvYVZJKQFNkA-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-17" value="数据实时推送服务" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="707" y="390" width="100" height="114.29" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-18" value="运维人员" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="500.71000000000004" width="57.5" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-19" value="&lt;span style=&quot;&quot;&gt;异常监测数据界面&lt;/span&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="454" y="397.1500000000001" width="125" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.004;entryY=0.495;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-19" target="96A9WtjSYvYVZJKQFNkA-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-21" value="&lt;b&gt;&lt;span style=&quot;&quot;&gt;&lt;font&gt;回路监测数据&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="967.5" y="460" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.011;entryY=0.493;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-18" target="96A9WtjSYvYVZJKQFNkA-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-23" value="&lt;span style=&quot;&quot;&gt;校准记录&lt;/span&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="962" y="611.7800000000002" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-25" target="96A9WtjSYvYVZJKQFNkA-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-25" value="设备故障反馈服务" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="707" y="604.6400000000003" width="100" height="114.29" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-26" value="&lt;span style=&quot;&quot;&gt;设备故障处理界面&lt;/span&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="454" y="611.79" width="125" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.004;entryY=0.495;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-26" target="96A9WtjSYvYVZJKQFNkA-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="96A9WtjSYvYVZJKQFNkA-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.521;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="96A9WtjSYvYVZJKQFNkA-18" target="96A9WtjSYvYVZJKQFNkA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
